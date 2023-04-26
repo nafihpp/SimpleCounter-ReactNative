@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, Pressable } from "react-native";
 
-export default function counter({ count, increment, decrement }) {
+export default function Counter({ route }) {
+    const { count, increment, decrement } = route.params;
     return (
         <View style={styles.mainContainer}>
             <View style={styles.countContainer}>
